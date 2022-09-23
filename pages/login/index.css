@@ -1,1 +1,61 @@
 /* Desenvolva seu código aqui... */
+
+body{
+    background-color: var(--color-grey-1);
+}
+
+.logo{
+    width: 25vw;
+    height: 50vh;
+    margin: 25vh 0;
+    border-radius: 8px 0 0 8px;
+    padding: 40px;
+}
+
+.login{
+    width: 25vw;
+    height: 50vh;
+    border-radius: 0 8px 8px 0;
+}
+
+#login > form{
+    gap: 15px;
+}
+
+.modalWraper{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+}
+
+.modal{
+    background-color: #FFFFFF;
+    height: 70vh;
+    width: 50vh;
+    margin: 15vh auto;
+    border-radius: 8px;
+    justify-content: space-around;
+    padding: 40px;
+    position: relative;
+}
+
+.modalHeader{
+    justify-content: space-between;
+}
+
+.modalHeader > p{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 18px;
+    color: var(--color-grey-2);
+    font-weight: 600;
+}
+
+.modalMain > p{
+    text-align: center;
+}
+
+.hideModal{
+    display: none;
+}

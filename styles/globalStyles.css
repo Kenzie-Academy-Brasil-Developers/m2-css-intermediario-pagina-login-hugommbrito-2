@@ -2,14 +2,79 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 :root{
-    --color-primary: /* definir */;
+    --color-primary: #F0A82B;
+    --color-secondary: rgb(242, 196, 116);
+    --color-secondary-80: rgb(242, 196, 116, 0.85);
     --color-grey-1: #191C1F;
     --color-grey-2: #212529;
     --color-grey-3: #343A40;
     --color-grey-4: #ADB5BD;
     --color-grey-5: #CED4DA;
     --color-grey-6: #EDF2FF;
+}
+
+.color-primary{
+    color: var(--color-primary)
+}
+
+.bgc-secondary{
+    background-color: var(--color-secondary-80);
+}
+
+.color-grey1{
+    color: var(--color-grey-1);
+}
+
+.color-grey2{
+    color: var(--color-grey-2);
+}
+
+.color-grey3{
+    color: var(--color-grey-3);
+}
+
+.bgc-grey4{
+    background-color: var(--color-grey-4);
+}
+
+.bgc-grey5{
+    background-color: var(--color-grey-5);
+}
+
+.bgc-grey6{
+    background-color: var(--color-grey-6);
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.content-center{
+    justify-content: center;
+    align-items: center;
+}
+
+.gap{
+    gap: 25px;
+}
+
+.radius{
+    border-radius: 1rem;
+}
+
+.width-full{
+    width: 100%;
+}
+
+.button-cursor{
+    cursor: pointer;
 }

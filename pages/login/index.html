@@ -4,11 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/globalStyles.css">
+    <link rel="stylesheet" href="../../styles/globalStyles.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../../styles/defaultItems.css">
     <title>Login</title>
 </head>
-<body>
-    <script src="/scripts/modal.js"></script>
+<body class="flex content-center">
+    <!-- CORPO PRINCIPAL DA PÁGINA -->
+    <div class="logo bgc-grey6 flex-column content-center gap">
+        <h1 class="color-primary">MyLogo</h1>
+        <p class="color-grey2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <div id="login" class="login bgc-secondary flex-column content-center gap">
+        <h2>LOGIN</h2>
+        <form class="flex-column">
+            <label class="color-grey2" for="email color-grey2">Email</label>
+            <input class="input-default hover-border" type="text" id="email" placeholder="Type email here...">
+            <label class="color-grey2" for="password">Password</label>
+            <input class="input-default hover-border" type="password" id="password" placeholder="Type password here...">
+            <p data-control-modal="modalFgtPsswrd" class="color-grey3 button-cursor">Forgot Password?</p>
+            <button data-control-modal="modalLogin" class="button-default hover-border" >login</button>
+        </form>
+    </div>
+
+    <!-- MODAL DE SENHA ESQUECIDA -->
+    <div id="modalFgtPsswrd" class="modalWraper bgc-secondary hideModal">
+        <div class="modal flex-column ">
+            <div class="modalHeader flex">
+                <h2 class="color-grey1">New Password</h2>
+                <p data-control-modal="modalFgtPsswrd" class="button-cursor">X</p>
+            </div>
+            <div class="modalMain flex-column gap ">
+                <p>Enter your email bellow and you will receive a temporary passowrd. You should change it after the first login.</p>
+                <input class="input-default hover-border" type="text" placeholder="Enter email here...">
+            </div>
+            <div class="modalButton">
+                <button class="button-default hover-border">Send new passord</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DE LOGIN -->
+    <div id="modalLogin" class="modalWraper bgc-secondary">
+        <div class="modal flex-column ">
+            <div class="modalHeader flex">
+                <h2 class="color-grey1">Welcome</h2>
+                <p data-control-modal="modalLogin" class="button-cursor">X</p>
+            </div>
+            <img src="../../assets/img/user4.svg" alt="Picture of the user">
+        </div>
+    </div>
+
+
+    <script src="../../scripts/modal.js"></script>
 </body>
 </html>
